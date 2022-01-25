@@ -1,0 +1,69 @@
+problem1 sol1:
+
+algotithm somme 
+ var
+    set1:array_of integer[n];
+    set2:array_of integer[m];
+    n,m,i,j:integer:
+    test:boolean;
+    som:integer:= 0;
+
+ begin
+   for (i from 1 to n step 1 do)
+    test:= false;
+     for (j from 1 to m step 1 do)
+       if (set1[i] = set2[j])then
+        test:=true;
+        j:= m;
+       end_if
+     end_for
+    if (test=false)then
+     som:=som+set1[i];
+    end_if
+   end_for
+
+  for (i from 1 to m step 1 do)
+    test:= false;
+     for (j from 1 to n step 1 do)
+       if (set2[i] = set1[j])then
+        test:=true;
+        j:= m;
+       end_if
+     end_for
+    if (test=false)then
+     som:=som+set2[i];
+    end_if
+   end_for
+         write(som);
+
+end.
+
+problem 2 sol 1:
+
+algotithm somme 
+ var
+    set1:array_of integer[n];
+    set2:array_of integer[m];
+    n,m,i,j:integer:
+    test:boolean;
+    som:integer:= 0;
+
+ begin
+   for (i from 1 to n step 1 do)
+    test:= false;
+     for (j from 1 to m step 1 do)
+       if (set1[i] = set2[j])then
+        test:=true;
+        j:= m;
+       end_if
+     end_for
+    if (test=true)then
+     som:=som+set1[i];
+    end_if
+   end_for
+         
+         som:=som*2;
+         write(som);
+ 
+end.
+
