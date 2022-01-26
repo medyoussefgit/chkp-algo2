@@ -11,7 +11,6 @@ BEGIN
  END FOR
  for i from 1 to set2.length do
   if ht.lookup (set2[i])then 
-  
    ht.insert(set2[i], ht.get(set2[i])+1)
  end if
 END FOR
